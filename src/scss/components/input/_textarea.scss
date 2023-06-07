@@ -1,0 +1,38 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+textarea.textarea {
+	box-sizing: border-box;
+	padding: 15px;
+	border: 1px solid var(--line-color);
+	color: var(--text-color);
+	vertical-align: middle;
+	transition: border .2s;
+	resize: none;
+
+	&:focus {
+		border-color: var(--secondary-blue);
+		box-shadow: 0 0 0 1px var(--secondary-blue) inset;
+	}
+
+	&::placeholder { color: var(--text-color3); }
+
+	&[readonly] {
+		background-color: var(--disabled-color);
+		border-color: var(--line-color);
+
+		&:focus { box-shadow: none; }
+	}
+
+	&[disabled] {
+		background-color: var(--disabled-color);
+		border-color: var(--line-color);
+		color: #b4b8c0;
+	}
+
+	&.error {
+		border-color: var(--error-color);
+		box-shadow: none;
+	}
+}
+

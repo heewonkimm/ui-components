@@ -1,0 +1,62 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+.pagination {
+	@include centerFlex;
+	column-gap: 50px;
+
+	a {
+		@include size(30px,30px);
+
+		&.btn-prev {
+			@include spriteIR(30px, 30px, $common-btn-prev);
+
+			&.disabled { @include spriteIR(30px, 30px, $common-btn-prev-disabled); }
+		}
+
+		&.btn-next {
+			@include spriteIR(30px, 30px, $common-btn-next);
+
+			&.disabled { @include spriteIR(30px, 30px, $common-btn-next-disabled); }
+		}
+	}
+
+	.page-num {
+		display: flex;
+		column-gap: 15px;
+		font-size: 16px;
+		color: var(--text-color3);
+
+		.num {
+			@include centerFlex;
+
+			&.on {
+				width: 30px;
+				height: 30px;
+				background-color: var(--primary-color);
+				border-radius: 100%;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.fraction {
+	@include centerFlex;
+	column-gap: 10px;
+
+	a {
+		&.btn-prev { @include spriteIR(30px, 30px, $common-btn-small-prev); }
+
+		&.btn-next { @include spriteIR(30px, 30px, $common-btn-small-next); }
+	}
+
+	.page-num {
+		display: flex;
+		column-gap: 7px;
+		font-size: 16px;
+		color: var(--text-color);
+
+		.current { font-weight: 700; }
+	}
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% include './head.html' ignore missing -%}
+<body>
+	<ul class="skip-nav">
+		<li>
+			<a href="#mainContent">본문 바로가기</a>
+		</li>
+	</ul>
+
+	<div class="wrapper">
+		<!-- Content // -->
+		{% block content %}
+		{% endblock %}
+		<!-- // Content -->
+	</div>
+</body>
+</html>

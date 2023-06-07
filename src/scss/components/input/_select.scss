@@ -1,0 +1,40 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+select.select {
+	@include size(250px,40px);
+	box-sizing: border-box;
+	padding-right: 37px;
+	padding-left: 16px;
+	position: relative;
+	background: url('@@img/common/arrow.png') no-repeat;
+	background-position: center right 16px;
+	background-size: 14px 8px;
+	border: 1px solid var(--line-color);
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--text-color);
+
+
+	&:focus {
+		background: url('@@img/common/arrow-active.png') no-repeat;
+		background-position: center right 16px;
+		border-color: var(--secondary-blue);
+		box-shadow: 0 0 0 1px var(--secondary-blue) inset;
+		color: var(--text-color);
+	}
+
+	&[disabled] {
+		background-color: var(--disabled-color);
+		color: #b4b8c0;
+	}
+
+	&.error {
+		background: url('@@img/common/arrow-error.png') no-repeat;
+		background-position: center right 16px;
+		background-size: 14px 8px;
+		border-color: var(--error-color);
+		box-shadow: none;
+	}
+}
+

@@ -1,0 +1,37 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+.attach-file {
+	display: flex;
+	// align-items: center;
+	column-gap: 20px;
+
+	.input {
+		.btn {
+			white-space: nowrap;
+			cursor: pointer;
+		}
+
+		.input-file { @include hide; }
+	}
+
+	.cont-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		column-gap: 20px;
+
+		.content {
+			display: flex;
+			align-items: center;
+
+			.btn-del {
+				@include spriteIR(20px, 20px, $common-btn-clear);
+				flex-shrink: 0;
+
+				@include size(20px,20px);
+				margin-left: 5px;
+			}
+		}
+	}
+}

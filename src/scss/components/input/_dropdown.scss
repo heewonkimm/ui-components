@@ -1,0 +1,43 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+.dropdown {
+	position: relative;
+	font-size: 14px;
+
+	.button {
+		@include size(100%,30px);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 5px;
+
+		.arrow { @include spriteIR(7px, 4px, $common-small-arrow); }
+	}
+
+	.op-list {
+		width: 100%;
+		max-height: 0;
+		padding-left: 5px;
+		overflow: hidden;
+		position: absolute;
+		top: 30px;
+		left: 0;
+		border-top: 1px solid var(--default-color);
+		box-shadow: -2px 4px 10px -5px rgb(53 53 55 / .5);
+		transition: all .3s;
+
+		.op-item {
+			padding: 5px 0;
+
+			&:first-child { padding-top: 5px; }
+
+			&:last-child { padding-bottom: 5px; }
+		}
+
+		&.on {
+			max-height: 100vw;
+			overflow-y: auto;
+		}
+	}
+}

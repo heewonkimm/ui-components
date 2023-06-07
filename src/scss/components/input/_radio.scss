@@ -1,0 +1,29 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+
+label.radio {
+	padding-left: 28px;
+	position: relative;
+	font-size: 16px;
+
+	input[type='radio'] {
+		@include hide;
+
+		+ .custom-radio {
+			@include spriteIR(20px, 20px, $common-radio, absolute);
+			top: 0;
+			left: 0;
+		}
+
+		&:checked + .custom-radio { @include spriteIR(20px, 20px, $common-radio-checked, absolute); }
+	}
+
+	input[disabled] {
+		+ .custom-radio { @include spriteIR(20px, 20px, $common-radio-disabled, absolute); }
+
+		&:checked + .custom-radio { @include spriteIR(20px, 20px, $common-radio-disabled-checked, absolute); }
+
+		~ .txt { color: var(--disabled-text-color); }
+	}
+}

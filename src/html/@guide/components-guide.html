@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>Components Guide</title>
+
+	<!-- Application Style / Script -->
+	<link rel="stylesheet" href="{{base}}/css/common.css">
+	<script src="{{base}}/js/lib/jquery-3.6.2.min.js"></script>
+	<script src="{{base}}/js/ui-common.js"></script>
+
+	<!-- Components Guide -->
+	<link rel="stylesheet" href="{{base}}/js/components-guide/index.css">
+	<link rel="stylesheet" href="{{base}}/js/components-guide/highlight/vs2015.min.css">
+	<script src="{{base}}/js/components-guide/highlight/highlight.min.js"></script>
+	<script src="{{base}}/js/components-guide/index.js"></script>
+</head>
+<body>
+
+	<h1 class="component-page-head">Components</h1>
+
+	<div class="component-nav">
+		<p class="t">Components</p>
+		<ul class="list"></ul>
+	</div>
+
+	<h2 class="component-head">Button</h2>
+
+	<h3 class="component-sub-head">기본 버튼</h3>
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="Regular">
+				<div class="component-contents">
+					<a href="#" class="btn">버튼</a>
+					<a href="#" class="btn primary">버튼</a>
+					<a href="#" class="btn mint">버튼</a>
+					<br>
+					<a href="#" class="btn outline">버튼</a>
+					<a href="#" class="btn outline primary">버튼</a>
+					<a href="#" class="btn outline mint">버튼</a>
+					<br><br>
+					<a href="#" class="btn round">버튼</a>
+					<a href="#" class="btn round primary">버튼</a>
+					<a href="#" class="btn round mint">버튼</a>
+					<br>
+					<a href="#" class="btn round outline">버튼</a>
+					<a href="#" class="btn round outline primary">버튼</a>
+					<a href="#" class="btn round outline mint">버튼</a>
+				</div>
+			</div>
+			<div class="component-item" data-title="Large">
+				<div class="component-contents">
+					<a href="#" class="btn large">버튼</a>
+					<a href="#" class="btn large primary">버튼</a>
+					<a href="#" class="btn large mint">버튼</a>
+					<br>
+					<a href="#" class="btn large outline">버튼</a>
+					<a href="#" class="btn large outline primary">버튼</a>
+					<a href="#" class="btn large outline mint">버튼</a>
+					<br><br>
+					<a href="#" class="btn large round">버튼</a>
+					<a href="#" class="btn large round primary">버튼</a>
+					<a href="#" class="btn large round mint">버튼</a>
+					<br>
+					<a href="#" class="btn large outline round">버튼</a>
+					<a href="#" class="btn large outline round primary">버튼</a>
+					<a href="#" class="btn large outline round mint">버튼</a>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Small">
+				<div class="component-contents">
+					<a href="#" class="btn small">버튼</a>
+					<a href="#" class="btn small primary">버튼</a>
+					<a href="#" class="btn small mint">버튼</a>
+					<br>
+					<a href="#" class="btn small outline">버튼</a>
+					<a href="#" class="btn small outline primary">버튼</a>
+					<a href="#" class="btn small outline mint">버튼</a>
+					<br><br>
+					<a href="#" class="btn small round">버튼</a>
+					<a href="#" class="btn small round primary">버튼</a>
+					<a href="#" class="btn small round mint">버튼</a>
+					<br>
+					<a href="#" class="btn small round outline">버튼</a>
+					<a href="#" class="btn small round outline primary">버튼</a>
+					<a href="#" class="btn small round outline mint">버튼</a>
+				</div>
+			</div>
+			<div class="component-item" data-title="Wide">
+				<div class="component-contents">
+					<a href="#" class="btn large round wide primary">버튼</a>
+					<br>
+					<a href="#" class="btn large round wide mint">버튼</a>
+					<br><br>
+					<a href="#" class="btn large round outline wide primary">버튼</a>
+					<a href="#" class="btn large round outline wide mint">버튼</a>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="component-sub-head">버튼 그룹</h3>
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="Left">
+				<div class="component-contents">
+					<div class="btn-group">
+						<a href="#" class="btn primary">버튼</a>
+						<a href="#" class="btn mint">버튼</a>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="Right">
+				<div class="component-contents">
+					<div class="btn-group right">
+						<a href="#" class="btn primary">버튼</a>
+						<a href="#" class="btn mint">버튼</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Center">
+				<div class="component-contents">
+					<div class="btn-group center">
+						<a href="#" class="btn primary">버튼</a>
+						<a href="#" class="btn mint">버튼</a>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="Between">
+				<div class="component-contents">
+					<div class="btn-group between">
+						<div class="wrap">
+							<a href="#" class="btn primary">버튼</a>
+							<a href="#" class="btn mint">버튼</a>
+						</div>
+						<a href="#" class="btn outline">버튼</a>
+					</div>
+					<br>
+					<div class="btn-group between">
+						<a href="#" class="btn outline">버튼</a>
+						<div class="wrap">
+							<a href="#" class="btn primary">버튼</a>
+							<a href="#" class="btn mint">버튼</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Row">
+				<div class="component-contents">
+					<div class="btn-group row">
+						<a href="#" class="btn primary">버튼</a>
+						<a href="#" class="btn mint">버튼</a>
+					</div>
+					<div class="btn-group row">
+						<a href="#" class="btn outline">버튼</a>
+						<a href="#" class="btn outline">버튼</a>
+						<a href="#" class="btn outline">버튼</a>
+						<a href="#" class="btn primary">버튼</a>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="Col - square / round">
+				<div class="component-contents">
+					<div class="btn-group col">
+						<a href="#" class="btn primary">버튼</a>
+						<a href="#" class="btn mint">버튼</a>
+					</div>
+					&emsp;
+					<div class="btn-group col round">
+						<a href="#" class="btn primary outline">버튼</a>
+						<a href="#" class="btn primary">버튼</a>
+						<a href="#" class="btn mint">버튼</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Col + Row">
+				<div class="component-contents">
+					<div class="btn-group col">
+						<div class="btn-group row">
+							<a href="#" class="btn mint">버튼</a>
+							<a href="#" class="btn primary">버튼</a>
+							<a href="#" class="btn outline">버튼</a>
+						</div>
+					</div>
+					<div class="btn-group col">
+						<div class="btn-group row">
+							<a href="#" class="btn">버튼</a>
+						</div>
+					</div>
+					<div class="btn-group col">
+						<div class="btn-group row">
+							<a href="#" class="btn outline">버튼</a>
+							<a href="#" class="btn outline">버튼</a>
+							<a href="#" class="btn outline">버튼</a>
+							<a href="#" class="btn primary">버튼</a>
+						</div>
+					</div>
+					<div class="btn-group col">
+						<div class="btn-group row">
+							<a href="#" class="btn primary">버튼</a>
+							<a href="#" class="btn mint">버튼</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="component-item">
+				<div class="component-contents">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="component-head">Input</h2>
+
+	<h3 class="component-sub-head">기본 인풋</h3>
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="Text">
+				<div class="component-contents">
+					Enabled : 
+					<input type="text" class="text" placeholder="텍스트를 입력하세요." value="">
+					&emsp;
+					Readonly : 
+					<input type="text" class="text" placeholder="" value="텍스트를 입력하세요." readonly>
+					&emsp;
+					Disabled : 
+					<input type="text" class="text" placeholder="" value="텍스트를 입력하세요." disabled>
+					<br><br>
+					Placeholder : 
+					<input type="text" class="text underline" placeholder="텍스트를 입력하세요." value="">
+					&emsp;
+					Readonly : 
+					<input type="text" class="text underline" placeholder="" value="텍스트를 입력하세요." readonly>
+					&emsp;
+					Disabled : 
+					<input type="text" class="text underline" placeholder="" value="텍스트를 입력하세요." disabled>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Textarea">
+				<div class="component-contents">
+					Enabled : 
+					<textarea class="textarea" cols="20" rows="8" placeholder="텍스트를 입력하세요."></textarea>
+					&emsp;
+					Readonly : 
+					<textarea class="textarea" cols="20" rows="8" readonly>텍스트를 입력하세요.</textarea>
+					&emsp;
+					Disabled : 
+					<textarea class="textarea" cols="20" rows="8" disabled>텍스트를 입력하세요.</textarea>
+					&emsp;
+					Error : 
+					<textarea class="textarea error" cols="20" rows="8" placeholder="텍스트를 입력하세요."></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Attach File">
+				<div class="component-contents">
+					<div class="attach-file">
+						<div class="input">
+							<input type="file" class="input-file" id="file" name="file">
+							<label for="file" class="btn">파일 첨부</label>
+						</div>
+						<div class="cont-wrap">
+							<div class="content">
+								<p class="name">첨부 파일명.pptx</p>
+								<button type="button" class="btn-del">삭제버튼</button>
+							</div>
+							<div class="content">
+								<p class="name">첨부 파일명.pptx</p>
+								<button type="button" class="btn-del">삭제버튼</button>
+							</div>
+							<div class="content">
+								<p class="name">첨부 파일명.pptx</p>
+								<button type="button" class="btn-del">삭제버튼</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="Dropdown">
+				<div class="component-contents" style="padding-bottom: 100px;">
+					<div class="dropdown" style="width: 90px;">
+						<button type="button" class="button">최근등록순<span class="arrow"></span></button>
+						<ul class="op-list">
+							<li class="op-item"><a href="">낮은 가격 순</a></li>
+							<li class="op-item"><a href="">높은 가격 순</a></li>
+							<li class="op-item"><a href="">판매량 순</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Select">
+				<div class="component-contents">
+					Enabled :
+					<select class="select" name="" id="">
+						<option value="">선택하세요</option>
+						<option value="">선택하세요</option>
+						<option value="">선택하세요</option>
+					</select>
+					&emsp;
+					Disabled :
+					<select class="select" name="" id="" disabled>
+						<option value="">선택하세요</option>
+					</select>
+					&emsp;
+					Error :
+					<select class="select error" name="" id="">
+						<option value="">선택하세요</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="component-sub-head">Radio</h3>
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="label&gt;input">
+				<div class="component-contents">
+					Enabled : 
+					<label for="" class="radio">
+						<input type="radio" checked>
+						<span class="custom-radio"></span>
+						<span class="txt">옵션1</span>
+					</label>
+					<label for="" class="radio">
+						<input type="radio">
+						<span class="custom-radio"></span>
+						<span class="txt">옵션2</span>
+					</label>
+					&emsp;&emsp;
+					Disabled : 
+					<label for="" class="radio">
+						<input type="radio" checked disabled>
+						<span class="custom-radio"></span>
+						<span class="txt">옵션3</span>
+					</label>
+					<label for="" class="radio">
+						<input type="radio" disabled>
+						<span class="custom-radio"></span>
+						<span class="txt">옵션4</span>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="component-sub-head">Checkbox</h3>
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="Checkbox">
+				<div class="component-contents">
+					Enabled : 
+					<label class="checkbox">
+						<input type="checkbox" checked>
+						<span class="custom-check"></span>
+						<span class="txt">옵션1</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox">
+						<span class="custom-check"></span>
+						<span class="txt">옵션2</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" class="indeterminate">
+						<span class="custom-check">버튼</span>
+						<span>옵션3</span>
+					</label>
+					&emsp;&emsp;
+					Disabled : 
+					<label class="checkbox">
+						<input type="checkbox" checked disabled>
+						<span class="custom-check"></span>
+						<span class="txt">옵션4</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" disabled>
+						<span class="custom-check"></span>
+						<span class="txt">옵션5</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" class="indeterminate" disabled>
+						<span class="custom-check">버튼</span>
+						<span class="txt">옵션6</span>
+					</label>
+					&emsp;&emsp;
+					Error : 
+					<label class="checkbox">
+						<input type="checkbox" class="error" checked>
+						<span class="custom-check"></span>
+						<span class="txt">옵션7</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" class="error">
+						<span class="custom-check"></span>
+						<span class="txt">옵션8</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" class="error indeterminate">
+						<span class="custom-check">버튼</span>
+						<span class="txt">옵션9</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="Switch">
+				<div class="component-contents">
+					Enabled : 
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="custom-switch"></span>
+						<span class="txt">텍스트</span>
+					</label>
+					&emsp;&emsp;
+					Disabled : 
+					<label class="switch">
+						<input type="checkbox" disabled>
+						<span class="custom-switch"></span>
+						<span class="txt">텍스트</span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked disabled>
+						<span class="custom-switch"></span>
+						<span class="txt">텍스트</span>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="component-head">Pagination</h2>
+
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="pagination">
+				<div class="component-contents">
+					<div class="pagination">
+						<a href="#" class="btn-prev disabled">이전 페이지</a>
+						<div class="page-num">
+							<a href="#" class="num on">1</a>
+							<a href="#" class="num">2</a>
+							<a href="#" class="num">3</a>
+							<a href="#" class="num">4</a>
+							<a href="#" class="num">5</a>
+						</div>
+						<a href="#" class="btn-next">다음 페이지</a>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="fraction">
+				<div class="component-contents">
+					<div class="fraction">
+						<a href="#" class="btn-prev">이전 페이지</a>
+						<div class="page-num">
+							<span class="current">2</span>
+							<span class="slash">/</span>
+							<span class="total">4</span>
+						</div>
+						<a href="#" class="btn-next">다음 페이지</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="component-head">Accordion</h2>
+
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item">
+				<div class="component-contents">
+					<dl class="accordion">
+						<dt class="title">
+							<a href="">기본 정보1</a>
+							<span class="arrow"></span>
+						</dt>
+						<dd class="desc">
+							<div class="acor-wrap">
+								<dl class="accordion">
+									<dt class="title">
+										<a href="">1</a>
+										<span class="arrow"></span>
+									</dt>
+									<dd class="desc">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero corrupti porro laboriosam impedit quia? Enim veniam facere a rem accusantium! At qui quidem assumenda optio explicabo ad porro cumque.</p>
+									</dd>
+									<dt class="title">
+										<a href="">2</a>
+										<span class="arrow"></span>
+									</dt>
+									<dd class="desc">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero corrupti porro laboriosam impedit quia? Enim veniam facere a rem accusantium! At qui quidem assumenda optio explicabo ad porro cumque.</p>
+									</dd>
+									<dt class="title">
+										<a href="">3</a>
+										<span class="arrow"></span>
+									</dt>
+									<dd class="desc">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero corrupti porro laboriosam impedit quia? Enim veniam facere a rem accusantium! At qui quidem assumenda optio explicabo ad porro cumque.</p>
+									</dd>
+								</dl>
+							</div>
+						</dd>
+						<dt class="title">
+							<a href="">기본 정보2</a>
+							<span class="arrow"></span>
+						</dt>
+						<dd class="desc">
+							<div class="acor-wrap">
+								<dl class="accordion">
+									<dt class="title">
+										<a href="">A</a>
+										<span class="arrow"></span>
+									</dt>
+									<dd class="desc">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero corrupti porro laboriosam impedit quia? Enim veniam facere a rem accusantium! At qui quidem assumenda optio explicabo ad porro cumque.</p>
+									</dd>
+									<dt class="title">
+										<a href="">B</a>
+										<span class="arrow"></span>
+									</dt>
+									<dd class="desc">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero corrupti porro laboriosam impedit quia? Enim veniam facere a rem accusantium! At qui quidem assumenda optio explicabo ad porro cumque.</p>
+									</dd>
+								</dl>
+							</div>
+						</dd>
+						<dt class="title">
+							<a href="">기본 정보3</a>
+							<span class="arrow"></span>
+						</dt>
+						<dd class="desc">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero corrupti porro laboriosam impedit quia? Enim veniam facere a rem accusantium! At qui quidem assumenda optio explicabo ad porro cumque.</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="component-item">
+				<div class="component-contents">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<h2 class="component-head">Tab</h2>
+
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="Tab-Menu">
+				<div class="component-contents">
+					<div class="tab-menu">
+						<ul class="list">
+							<li class="item"><a href="" class="active">Menu1</a></li>
+							<li class="item"><a href="">Menu2</a></li>
+							<li class="item"><a href="">Menu3</a></li>
+							<li class="item"><a href="">Menu4</a></li>
+						</ul>
+					</div>
+					<br><br>
+					<div class="tab-menu center">
+						<ul class="list">
+							<li class="item"><a href="" class="active">Menu1</a></li>
+							<li class="item"><a href="">Menu2</a></li>
+							<li class="item"><a href="">Menu3</a></li>
+							<li class="item"><a href="">Menu4</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="Tabs">
+				<div class="component-contents">
+					<div class="tabs">
+						<div class="tab-menu">
+							<ul class="list">
+								<li class="item"><a href="#cont1" class="active">Menu1</a></li>
+								<li class="item"><a href="#cont2">Menu2</a></li>
+								<li class="item"><a href="#cont3">Menu3</a></li>
+								<li class="item"><a href="#cont4">Menu4</a></li>
+								<li class="item"><a href="#cont5">Menu5</a></li>
+							</ul>
+						</div>
+						<div class="tab-content" style="margin: 30px 0;">
+							<div class="content active" id="cont1">콘텐츠1</div>
+							<div class="content" id="cont2">콘텐츠2</div>
+							<div class="content" id="cont3">콘텐츠3</div>
+							<div class="content" id="cont4">콘텐츠4</div>
+							<div class="content" id="cont5">콘텐츠5</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="component-head">Table</h2>
+
+	<div class="component-body">
+		<div class="component-row">
+			<div class="component-item" data-title="가로형">
+				<div class="component-contents">
+					<div class="table-wrap">
+						<table class="table">
+							<caption>가로형 테이블입니다.</caption>
+							<thead>
+								<tr>
+									<th>카테고리1</th>
+									<th>카테고리2</th>
+									<th>카테고리3</th>
+									<th>카테고리4</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+								<tr>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="세로형">
+				<div class="component-contents">
+					<div class="table-wrap">
+						<table class="table row">
+							<caption>세로형 테이블입니다.</caption>
+							<tbody>
+								<tr>
+									<th>카테고리1</th>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+								<tr>
+									<th>카테고리2</th>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+								<tr>
+									<th>카테고리3</th>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="component-row">
+			<div class="component-item" data-title="혼합형">
+				<div class="component-contents">
+					<div class="table-wrap">
+						<table class="table mix">
+							<caption>혼합형 테이블입니다.</caption>
+							<thead>
+								<tr>
+									<th>&nbsp;</th>
+									<th>카테고리1</th>
+									<th>카테고리2</th>
+									<th>카테소리3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>1</th>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+								<tr>
+									<th>3</th>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="component-item" data-title="table > table">
+				<div class="component-contents">
+					<div class="table-wrap">
+						<table class="table">
+							<caption>혼합형 테이블입니다.</caption>
+							<thead>
+								<tr>
+									<th>&nbsp;</th>
+									<th>카테고리1</th>
+									<th>카테고리2</th>
+									<th>카테소리3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>1</th>
+									<td>
+										<div class="table-wrap">
+											<table class="table">
+												<caption>가로형 테이블입니다.</caption>
+												<thead>
+													<tr>
+														<th>카테고리1</th>
+														<th>카테고리2</th>
+														<th>카테고리3</th>
+														<th>카테고리4</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>내용영역</td>
+														<td>내용영역</td>
+														<td>내용영역</td>
+														<td>내용영역</td>
+													</tr>
+													<tr>
+														<td>내용영역</td>
+														<td>내용영역</td>
+														<td>내용영역</td>
+														<td>내용영역</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>
+										<div class="table-wrap">
+											<table class="table row">
+												<caption>세로형 테이블입니다.</caption>
+												<tbody>
+													<tr>
+														<th>카테고리1</th>
+														<td>내용영역</td>
+														<td>내용영역</td>
+														<td>내용영역</td>
+													</tr>
+													<tr>
+														<th>카테고리2</th>
+														<td>내용영역</td>
+														<td>내용영역</td>
+														<td>내용영역</td>
+													</tr>
+													<tr>
+														<th>카테고리3</th>
+														<td>내용영역</td>
+														<td>내용영역</td>
+														<td>내용영역</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+								<tr>
+									<th>3</th>
+									<td>내용영역</td>
+									<td>내용영역</td>
+									<td>내용영역</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="resize-padding"></div>
+</body>
+</html>

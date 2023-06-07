@@ -1,0 +1,45 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+
+label.checkbox {
+	padding-left: 28px;
+	position: relative;
+	font-size: 16px;
+
+	input[type='checkbox'] {
+		@include hide;
+
+		+ .custom-check {
+			@include spriteIR(20px, 20px, $common-check, absolute);
+			top: 0;
+			left: 0;
+		}
+
+		&:checked + .custom-check { @include spriteIR(20px, 20px, $common-check-checked, absolute); }
+
+		&.indeterminate + .custom-check { @include spriteIR(20px, 20px, $common-check-indeterminate, absolute); }
+	}
+
+	input[disabled] {
+		+ .custom-check { @include spriteIR(20px, 20px, $common-check-disabled, absolute); }
+
+		&:checked + .custom-check { @include spriteIR(20px, 20px, $common-check-disabled-checked, absolute); }
+
+		&.indeterminate + .custom-check { @include spriteIR(20px, 20px, $common-check-disabled-indeterminate, absolute); }
+
+
+		~ .txt { color: var(--disabled-text-color); }
+	}
+
+	input.error {
+		+ .custom-check { @include spriteIR(20px, 20px, $common-check-error, absolute); }
+
+		&:checked + .custom-check { @include spriteIR(20px, 20px, $common-check-error-ckecked, absolute); }
+
+		&.indeterminate + .custom-check { @include spriteIR(20px, 20px, $common-check-error-indeterminate, absolute); }
+
+
+		~ .txt { color: var(--error-color); }
+	}
+}

@@ -1,0 +1,52 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+input.text {
+	@include size(200px,40px);
+	box-sizing: border-box;
+	padding: 15px;
+	border: 1px solid var(--line-color);
+	color: var(--text-color);
+	transition: border .2s;
+
+	&:focus {
+		border-color: var(--secondary-blue);
+		box-shadow: 0 0 0 1px var(--secondary-blue) inset;
+	}
+
+	&::placeholder { color: var(--text-color3); }
+
+	&[readonly] {
+		background-color: var(--disabled-color);
+		border-color: var(--line-color);
+
+		&:focus { box-shadow: none; }
+	}
+
+	&[disabled] {
+		background-color: var(--disabled-color);
+		border-color: var(--line-color);
+		color: #b4b8c0;
+	}
+
+
+	&.underline {
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+
+		&:focus {
+			border-width: 2px;
+			box-shadow: none;
+			transition: none;
+		}
+
+		&[readonly] {
+			background-color: #fff;
+
+			&:focus { border-width: 1px; }
+		}
+
+		&[disabled] { background-color: #fff; }
+	}
+}

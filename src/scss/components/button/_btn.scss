@@ -1,0 +1,65 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+.btn {
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 85px;
+	height: 40px;
+	padding: 0 16px;
+	background-color: var(--default-color);
+	border: 1px solid var(--default-color);
+	font-size: 14px;
+	color: #fff;
+
+	&.primary {
+		background-color: var(--primary-color);
+		border: 1px solid var(--primary-color);
+	}
+
+	&.mint {
+		background-color: var(--secondary-mint);
+		border: 1px solid var(--secondary-mint);
+	}
+
+	&.large {
+		min-width: 115px;
+		height: 50px;
+		padding: 0 20px;
+		font-size: 16px;
+	}
+
+	&.small {
+		min-width: 75px;
+		height: 30px;
+		padding: 0 14px;
+		font-size: 12px;
+	}
+
+	&.round {
+		border-radius: 20px;
+
+		&.large { border-radius: 25px; }
+
+		&.small { border-radius: 15px; }
+	}
+
+	&.outline {
+		background: 0 0;
+		color: var(--default-color);
+
+		&.primary {
+			color: var(--primary-color);
+		}
+
+		&.mint { color: var(--secondary-mint); }
+	}
+
+	&.wide {
+		width: 100%;
+		padding: 0 40px;
+	}
+}
+

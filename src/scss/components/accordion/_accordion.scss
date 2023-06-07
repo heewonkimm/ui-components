@@ -1,0 +1,55 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+.accordion {
+	.title {
+		@include centerFlex;
+		column-gap: 15px;
+		height: 54px;
+		padding-right: 20px;
+		margin-bottom: 10px;
+		border-top: 1px solid #f0f1f4;
+		border-bottom: 1px solid #f0f1f4;
+		font-size: 18px;
+		font-weight: 600;
+		cursor: pointer;
+
+		a {
+			width: 100%;
+			padding: 12px 20px;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+		&:last-child { margin-bottom: 0; }
+
+		.arrow {
+			@include spriteIR(16px, 8px, $common-arrow);
+			transition: all .3s;
+		}
+
+		&.on {
+			+ .desc {
+				max-height: 100vw;
+				overflow-y: auto;
+			}
+
+			.arrow { transform: rotate(180deg); }
+		}
+	}
+
+	.desc {
+		box-sizing: border-box;
+		display: block;
+		max-height: 0;
+		overflow: hidden;
+		font-size: 16px;
+		transition: all .3s;
+
+		p { padding: 10px 20px 20px; }
+	}
+
+	.acor-wrap {
+		padding: 5px 40px 30px;
+	}
+}

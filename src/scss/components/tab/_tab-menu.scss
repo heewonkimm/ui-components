@@ -1,0 +1,46 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+.tab-menu {
+	.list {
+		display: flex;
+		border-bottom: 1px solid var(--text-color3);
+
+		a {
+			display: block;
+			padding: 15px;
+			position: relative;
+			font-size: 16px;
+			color: var(--text-color3);
+
+			&.active {
+				font-weight: 600;
+				color: var(--text-color);
+
+				&::after {
+					@include size(100%, 2px);
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: -1px;
+					left: 0;
+					background-color: var(--text-color);
+				}
+			}
+		}
+	}
+
+	&.center {
+		.list { justify-content: center; }
+	}
+
+	@at-root .tab-content {
+		text-align: center;
+
+		.content {
+			display: none;
+
+			&.active { display: block; }
+		}
+	}
+}

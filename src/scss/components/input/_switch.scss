@@ -1,0 +1,46 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+label.switch {
+	position: relative;
+	font-size: 16px;
+
+	input[type='checkbox'] {
+		@include hide;
+
+		+ .custom-switch {
+			@include size(40px,20px);
+			display: inline-block;
+			position: relative;
+			background-color: var(--default-color);
+			border-radius: 10px;
+			transition: all .2s;
+
+			&::after {
+				@include size(16px,16px);
+				content: '';
+				display: inline-block;
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				background-color: #fff;
+				border-radius: 10px;
+				transition: all .2s;
+			}
+		}
+
+		&:checked + .custom-switch {
+			background-color: var(--secondary-blue);
+
+			&::after { left: 22px; }
+		}
+	}
+
+	input[disabled] {
+		+ .custom-switch { background-color: var(--disabled-color); }
+
+		&:checked + .custom-switch { background-color: var(--disabled-color); }
+
+		~ .txt { color: var(--disabled-text-color); }
+	}
+}

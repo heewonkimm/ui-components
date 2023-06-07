@@ -1,0 +1,77 @@
+@use './helpers/index' as *;
+@use './vendors/sprites' as *;
+
+.table-wrap {
+	border-top: 1px solid var(--line-color2);
+	border-bottom: 1px solid var(--line-color2);
+
+	.table {
+		width: 100%;
+		text-align: center;
+
+		th {
+			padding: 10px;
+			background-color: #f6f7f8;
+			border-right: 1px dashed var(--line-color3);
+			font-size: 13px;
+			font-weight: 600;
+
+			&:last-child { border-right: 0; }
+		}
+
+
+		tbody {
+			> tr {
+				> td {
+					padding: 10px;
+					border-top: 1px solid var(--line-color3);
+					border-right: 1px dashed var(--line-color3);
+					font-size: 11px;
+
+					&:last-child { border-right: 0; }
+				}
+
+				&:first-child {
+					> td { border-top: 0; }
+				}
+			}
+		}
+
+		&.row {
+			th {
+				padding: 10px;
+				background-color: #f6f7f8;
+				border-right: 0;
+				border-bottom: 1px dashed var(--line-color3);
+				font-size: 13px;
+
+				&:last-child { border-bottom: 0; }
+			}
+
+			tr {
+				> td {
+					border-top: 1px dashed var(--line-color3);
+					border-right: 1px solid var(--line-color3);
+
+					&:last-child { border-right: 0; }
+				}
+			}
+		}
+
+		&.mix {
+			thead {
+				th { border-bottom: 1px dashed var(--line-color3); }
+			}
+
+			tbody {
+				th, td {
+					border-top: 1px dashed var(--line-color3);
+				}
+
+				:first-child th {
+					border-top: 0;
+				}
+			}
+		}
+	}
+}

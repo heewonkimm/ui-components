@@ -1,0 +1,23 @@
+@use './helpers' as *;
+
+.skip-nav {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: var(--skipnav-zindex);
+
+	a {
+		width: 100%;
+		padding: 8px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: var(--bg-black-color);
+		color: var(--bg-white-color);
+		text-align: center;
+		transform: translate3D(0,-100%,0);
+
+		&:focus-visible { transform: translate3D(0,0,0); }
+	}
+}

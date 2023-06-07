@@ -1,0 +1,24 @@
+@use './helpers' as *;
+
+:root {
+	// 기본 컬러
+	--default-color: hsl(220 9% 73%);
+	--primary-color: hsl(223 60% 38%);
+	--secondary-mint: hsl(180 86% 43%);
+	--secondary-blue: hsl(210 86% 51%);
+
+	// 라인 컬러
+	--line-color: hsl(223 13% 90%);
+	--line-color2: hsl(240 2% 12%);
+	--line-color3: hsl(223 13% 90%);
+
+
+	// 텍스트 컬러
+	--text-color: hsl(240 2% 12%);
+	--text-color3: hsl(210 1% 56%);
+
+	//상태 컬러
+	--disabled-color: hsl(225 15% 95%);
+	--error-color: hsl(0 86% 51%);
+	--disabled-text-color: hsl(220 9% 73%);
+}

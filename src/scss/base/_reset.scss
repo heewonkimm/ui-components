@@ -1,0 +1,23 @@
+/* stylelint-disable */
+
+/* reset.css (2018, 2023) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: middle; font: inherit; color: inherit; }
+html, body { height: 100%; -webkit-text-size-adjust: none; }
+main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; }
+ol, ul { list-style: none; margin: 0; }
+a { color: inherit; text-decoration: none; }
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after, q::before, q::after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+table caption { width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; position: absolute; clip: rect(0,0,0,0); clip-path: polygon(0 0,0 0,0 0); border: 0; white-space: nowrap; }
+input, button, form, select { padding: 0; margin: 0; font-family: inherit; font-size: inherit; }
+input[type=text], input[type=password], input[type=submit], input[type=search], input[type=email], input[type=tel], textarea, select { -webkit-appearance: none; border-radius: 0; }
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type=number] { -moz-appearance: textfield; }
+button { cursor: pointer; border: 0; background: none; }
+legend { width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; position: absolute; clip: rect(0,0,0,0); clip-path: polygon(0 0,0 0,0 0); border: 0; white-space: nowrap; }
+dialog { border: 0; margin: 0; padding: 0; max-width: none; max-height: none; color: inherit; visibility: visible; }
+*, ::after, ::before { box-sizing: border-box; }
+:focus:not(:focus-visible) { outline: 0; }
+:focus-visible {outline: 0; box-shadow: 0 0 0 1px var(--secondary-blue) inset;}

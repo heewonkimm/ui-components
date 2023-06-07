@@ -1,0 +1,45 @@
+.btn-group {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+
+	&.right { justify-content: flex-end; }
+
+	&.center { justify-content: center; }
+
+	&.between { justify-content: space-between; }
+
+	&.row {
+		flex-wrap: wrap;
+		gap: 0;
+
+		.btn {
+			flex: 1;
+
+			&.outline {
+				border-right: 0;
+
+				&:last-child { border-right: 1px solid var(--default-color); }
+			}
+		}
+	}
+
+	&.col {
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 0;
+
+		.btn { width: 100%; }
+
+		&.round {
+			gap: 10px;
+
+			.btn { border-radius: 30px; }
+		}
+	}
+
+	.wrap {
+		display: flex;
+		gap: 10px;
+	}
+}

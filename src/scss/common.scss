@@ -1,0 +1,14 @@
+// Base
+@use './base/reset';						// CSS 초기화
+@use './base/font-face';					// 글꼴 정의
+@use './base/root';							// CSS변수 정의
+@use './base/base';							// 전역 스타일
+
+// Utilities
+@use './utilities/**/*.scss';				// 유틸 스타일
+
+// Components
+@use './components/**/*.scss';				// 공통 컴포넌트
+
+// Layout
+@use './layout/**/*.scss';					// 레이아웃 스타일
